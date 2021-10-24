@@ -9,8 +9,10 @@ public class Main {
         System.out.println("Hello");
         System.out.println("Ramona");
  //     Tema 2
-
-
+        short myFirstNumber = 1;
+        int myInt = myFirstNumber + 3;
+        System.out.println(myInt);
+ //
 
 
 
