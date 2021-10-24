@@ -10,7 +10,8 @@ public class Main {
         System.out.println("Ramona");
  //     Tema 2
         System.out.println(2 + 3);
-
+ //     Tema 3
+        System.out.println(20/4);
 
 
 
