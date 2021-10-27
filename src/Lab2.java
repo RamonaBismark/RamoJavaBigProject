@@ -1,6 +1,10 @@
 public class Lab2 {
     public static void main(String[] args) {
+
+// Tema 1
         printMyName();
+
+// Tema 2
 
         int result = sum();
         System.out.println(result);
@@ -23,8 +27,18 @@ public class Lab2 {
         Print print1 = new Print();
         print.printJava();
 
+// Tema 4
+
         int result4 = average();
         System.out.println(result4);
+
+// Tema 5
+
+        Print print2 = new Print();
+        print.printMinion();
+
+
+
 
     }
 // Tema 1

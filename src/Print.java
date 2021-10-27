@@ -15,7 +15,17 @@ public class Print {
                 "J   J    aaaaa   v v   aaaaa \n" +
                 " JJJ    a     a   v  a     a \n");
 
-        ;
+
     }
 
+    public void printMinion(){
+        System.out.println("" +
+                "  +'''''''+  \n" +
+                "[ | o   o | ] \n" +
+                "  |   ^   |   \n" +
+                "  |  '_'  |   \n" +
+                "  +_______+   \n ");
+
+
+    }
 }
