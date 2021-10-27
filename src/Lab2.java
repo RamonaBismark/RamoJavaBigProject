@@ -17,8 +17,14 @@ public class Lab2 {
         Print print = new Print();
         print.printStars();
 
+
+ // Tema 3
+
         Print print1 = new Print();
         print.printJava();
+
+        int result4 = average();
+        System.out.println(result4);
 
     }
 // Tema 1
@@ -49,6 +55,12 @@ public class Lab2 {
         return result3;
     }
 
+// Tema 4
+
+    public static int average (){
+        int result4 = (( 2 + 3 + 4) /3);
+        return result4;
+    }
 
 }
 
