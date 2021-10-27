@@ -14,6 +14,12 @@ public class Lab2 {
         int result3 = divide();
         System.out.println(result3);
 
+        Print print = new Print();
+        print.printStars();
+
+        Print print1 = new Print();
+        print.printJava();
+
     }
 // Tema 1
 
