@@ -22,7 +22,7 @@ public class Lab2 {
         print.printStars();
 
 
-        // Tema 3
+// Tema 3
 
         Print print1 = new Print();
         print.printJava();
@@ -86,7 +86,6 @@ public class Lab2 {
         return result5;
     }
 
-// Tema 7
 
 
 }
