@@ -21,9 +21,25 @@ public class LogicalOperation {
         }
     }
 
+    public String verifyProvidedText(String text, int numar){
+        if (text.equals ("FastTrackIT") && numar <=3){
+            return text + numar;
+        }else if (!text.equals("FastTrackIT") && numar >= 4){
+            return numar + text;
+        }else {
+            return "Not found!";
+        }
+    }
 
 
+    public String checkSnow (int numar){
+        if (numar > 8 || numar == 6) {
+            return ("The ammount of snow this winter was" + numar + "cm");
+        } else {
+            return ("The forecast snow is" + numar);
+        }
 
+    }
 
 }
 
