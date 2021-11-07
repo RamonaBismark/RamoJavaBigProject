@@ -42,7 +42,7 @@ public class LogicalOperation {
     }
 
 
-    public String checkTheNumber ( int numar) {
+    public String checkTheNumber (int numar) {
         if (numar > 3 && numar != 4) {
             return "The number is greater than 3 and not equal to 4";
         } else if (numar == 4) {
@@ -53,6 +53,26 @@ public class LogicalOperation {
             return "No number found";
         }
     }
+
+
+    public String isNumberEven (int numar) {
+        if (numar % 2 == 0){
+            return "True";
+        } else {
+            return "False";
+        }
+    }
+
+
+    public String isEligibleToVote (int varsta) {
+        if (varsta >= 18) {
+            return "True";
+        } else {
+            return "False";
+        }
+    }
+
+
 
 }
 
