@@ -73,6 +73,17 @@ public class LogicalOperation {
     }
 
 
+    public String getTheHigherNumber (int a, int b, int c) {
+        if (a > b && a > c) {
+            return "Largest number is a";
+        } else if (b > c) {
+            return "Largest number is b";
+        } else {
+            return "Largest number is c";
+        }
+    }
+
+
 
 }
 

@@ -33,6 +33,7 @@ import javax.sound.midi.Soundbank;
 
 
 
+
  // Tema 9
          int n = 5;
       System.out.println(op.isNumberEven(n));
@@ -42,7 +43,11 @@ import javax.sound.midi.Soundbank;
          int varsta = 18;
       System.out.println(op.isEligibleToVote(varsta));
 
-
+// Tema 11
+         int a = 10;
+         int b = 17;
+         int c = 15;
+         System.out.println(op.getTheHigherNumber(a, b, c));
 
      }
 
