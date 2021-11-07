@@ -24,6 +24,11 @@ import javax.sound.midi.Soundbank;
          int z = 4;
          System.out.println(op.checkSnow(z));
 
+
+         int p = 4;
+         System.out.println(op.checkTheNumber(p));
+
+
      }
 
  }

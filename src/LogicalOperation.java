@@ -41,6 +41,19 @@ public class LogicalOperation {
 
     }
 
+
+    public String checkTheNumber ( int numar) {
+        if (numar > 3 && numar != 4) {
+            return "The number is greater than 3 and not equal to 4";
+        } else if (numar == 4) {
+            return "The number is equal to 4";
+        } else if (numar <3) {
+            return "The number is lower than 3";
+        } else {
+            return "No number found";
+        }
+    }
+
 }
 
 
