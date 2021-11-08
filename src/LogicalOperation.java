@@ -85,6 +85,12 @@ public class LogicalOperation {
 
 
 
+        public void countBackwords (int small, int big){
+            for (int i = big; i >= small; i--){
+                System.out.println(i);
+            }
+        }
+
 }
 
 
