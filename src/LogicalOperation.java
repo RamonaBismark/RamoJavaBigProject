@@ -85,12 +85,172 @@ public class LogicalOperation {
 
 
 
-        public void countBackwords (int small, int big){
-            for (int i = big; i >= small; i--){
+
+
+    public void countAscending (int small){
+        for ( int z = small; z <= 100; z++){
+            System.out.println(z);
+        }
+    }
+
+
+        public void countBackwords (int big1){
+            for (int i = big1; i>= 0; i--){
                 System.out.println(i);
             }
         }
 
-}
+
+        public void countCount (int small2, int big2){
+            for (int a = small2; a<=10; a++){
+                System.out.println(a);
+            }
+        }
+
+
+//        public int checkBigNumber  (int maxim, int maxx) {
+//
+//            for (int xx= maxim; xx < maxx; xx++ )
+//            if (xx > maxx) {
+//                maxim = xx;
+//            } else {
+//                maxim = maxx;
+//            }
+//                return maxim;
+//
+//        }
+
+        public void showNumerePare (int mic, int mare) {
+            for (int b = mic; b <= 100; b += 2) {
+                System.out.println(b);
+            }
+
+        }
+
+
+
+
+        public void showNumereImpare (int e, int f) {
+            for (int c = e; c <= 100; c +=2) {
+                System.out.println(c);
+            }
+
+        }
+
+
+        public void showSum (int sum) {
+            for (int o = 1; o <= 100; o++) {
+                sum = sum + o;
+            }
+            System.out.println(sum);
+        }
+
+
+
+
+        public float getAverageFromInterval (int start) {
+            float sum = 0;
+            for (int i = start; i <= 100; i++) {
+                sum = i + sum;
+            }
+            return sum / (100 - start + 1);
+
+        }
+
+//        public String showStars (int 1; int 10) {
+//            for (int r = 1; r<= 10; r--) {
+//                for (int p = 1; p <= r; p--) {
+//                    System.out.println(*);
+//                }
+//            }
+
+
+
+
+
+          public void countAscendingSecond ( int xxy){
+
+                while (xxy<= 100){
+                    System.out.println(xxy);
+                    xxy ++;
+                }
+            }
+
+
+          public void countBackwordsSecond ( int xyz){
+
+                while ( xyz >= 0){
+                    System.out.println(xyz);
+                    xyz --;
+                }
+          }
+
+            public void countCountSecond (int small5, int big5){
+
+            while (small5 <= 10){
+                System.out.println(small5);
+                small5 ++;
+                }
+            }
+
+
+
+//            public void showNumerePareSecond (int mic7, int mare7){
+//                while (mic7 <= 100){
+//                    System.out.println(mic7 +=2);// nu e ok asta
+//                    mic7++;
+//                }
+//
+//
+//            }
+
+
+            public void showNumereImpareSecond (int mic5, int mare5){
+
+                while (mic5<= 99){
+                    System.out.println(mic5 +=1);
+                    mic5 ++;
+                }
+            }
+
+
+            public float countNumere (int staaart, int maaaaxim) {
+            int yyy = staaart;
+            float sum = 0;
+            int count = 0;
+            while (yyy <= maaaaxim){
+                if (yyy >= staaart ){
+                    sum +=yyy;
+                    count ++;
+                }
+                yyy++;
+            } return sum/ count;
+            }
+
+
+
+
+
+
+        public float getAverageDivisiblebySeven(int startstart, int maxmax){
+            int x = startstart;
+            float sum = 0;
+            int count = 0;
+            while (x <= maxmax) {
+                if (x % 7 ==0){
+                    sum +=x;   // sum = sum +x;
+                    count ++;
+                }
+                x++;
+            }
+            return sum /count;
+        }
+
+
+
+        }
+
+
+
 
 
