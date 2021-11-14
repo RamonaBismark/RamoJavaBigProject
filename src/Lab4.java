@@ -98,11 +98,11 @@ public class Lab4 {
 
 
 
-     // Creati o metoda care sa afiseze toate numerele pare de la 1 la 100.
+        //    Creati o metoda care sa afiseze toate numerele pare de la 1 la 100.
 
-//        int mic7 = 0;
-//        int mare7 = 100;
-//        op.showNumerePareSecond (0, 100);
+        int mic7 = 0;
+        int mare7 = 100;
+        op.showNumerePareSecond (0, 100);
 
 
         // Creati o metoda care sa afiseze toate numerele impare de la 1 la 100.
@@ -125,13 +125,11 @@ public class Lab4 {
        System.out.println(op.getAverageDivisiblebySeven(1, 100));
 
 
+        // Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
 
+        op.getFibonacci();
 
-
-
-
-
-
+        op.printCozaLozaWoza(1,110);
 
 
 

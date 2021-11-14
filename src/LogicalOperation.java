@@ -195,14 +195,16 @@ public class LogicalOperation {
 
 
 
-//            public void showNumerePareSecond (int mic7, int mare7){
-//                while (mic7 <= 100){
-//                    System.out.println(mic7 +=2);// nu e ok asta
-//                    mic7++;
-//                }
-//
-//
-//            }
+            public void showNumerePareSecond (int mic7, int mare7){
+                mic7 = 2;
+                while (mic7 <= mare7){
+                    if (mic7%2 ==0)
+                    System.out.println(mic7);
+                    mic7 = mic7 +1;
+                    mic7++;
+                }
+
+            }
 
 
             public void showNumereImpareSecond (int mic5, int mare5){
@@ -248,7 +250,46 @@ public class LogicalOperation {
 
 
 
+        public void getFibonacci (){
+            int maxNumber = 20;
+            int previousNumber= 0;
+            int nextNumber = 1;
+            int f=1;
+            while (f<=maxNumber){
+                System.out.println(previousNumber);
+                int sum = previousNumber + nextNumber;
+                previousNumber = nextNumber;
+                nextNumber = sum;
+                f++;
+            }
+
+            }
+
+
+
+
+        public void printCozaLozaWoza(int itemsCount, int itemsPerLine) {
+
+        for (int i = 1; i <= itemsCount; i++) {
+
+            if (i % 3 == 0) {
+                System.out.print("Coza");
+            }
+            if (i % 5 == 0) {
+                System.out.print("Losa");
+            }
+            if (i % 7 == 0) {
+                System.out.print("Woza");
+            }
+            }
         }
+
+    }
+
+
+
+
+
 
 
 
