@@ -29,9 +29,9 @@ public class Lab4 {
         // si sa execute o numaratoare crescatoare de la cel mai mic la cel mai mare.(ex: daca int x e primul parametru iar int y  este cel de-al doilea,
         // daca x  este mai mare decat y, atunci numaratoarea sa fie de la y la x).
 
-//        int max =27;
-//        int maxx =59;
-//        System.out.println(op.checkBigNumber(27, 59));
+        int maxim = 14;
+        int maxx = 78;
+        op.checkBigNumber(14, 78);
 
 
         // Creati o metoda care sa afiseze toate numerele pare de la 1 la 100.
@@ -66,7 +66,10 @@ public class Lab4 {
         System.out.println(op.getAverageFromInterval(1));
 
 
-   //     System.out.println(op.showStars);
+
+        op.showStars();
+
+
 
 
 
@@ -95,7 +98,9 @@ public class Lab4 {
      // Creati o metoda care sa primeasca doi parametri de tip numar. Metoda trebuie sa verifice care dintre cele doua numere este mai mare, si sa execute o numaratoare crescatoare de la cel mai mic la cel mai mare.
         // (ex: daca int x e primul parametru iar int y  este cel de-al doilea, daca x  este mai mare decat y,  atunci numaratoarea sa fie de la y la x).
 
-
+        int firstNumber = 25;
+        int secondNumber = 45;
+        op.countBetweenWhile(25, 45);
 
 
         //    Creati o metoda care sa afiseze toate numerele pare de la 1 la 100.
@@ -116,7 +121,7 @@ public class Lab4 {
       //  Creati o metoda care sa adune toate numerele din intervalul 111 si 8899. Sa se afiseze suma totala, iar dupa aceea sa se calculeze si afiseze media numerelor din acel interval.
 
 
-        System.out.println(op.countNumere (111, 8899));
+        op.countNumere (111, 8899);
 
 
         // Creati o metoda care sa primeasca doi parametri de tip numar, si sa returneze media numerelor divizibile cu 7, din acel interval.
@@ -129,7 +134,7 @@ public class Lab4 {
 
         op.getFibonacci();
 
-        op.printCozaLozaWoza(1,110);
+        op.printCozaLozaWoza();
 
 
 
