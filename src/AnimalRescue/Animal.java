@@ -9,4 +9,6 @@ public class Animal {
     private int heightInCm ;
     private String name ;
     private String color ;
+
+
 }

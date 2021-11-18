@@ -1,3 +1,7 @@
+import com.sun.source.tree.BreakTree;
+
+import javax.swing.*;
+
 public class LogicalOperation {
 
 
@@ -317,6 +321,9 @@ public class LogicalOperation {
     }
 
 
+
+
+
     public int[] populateArray(int max) {
         int[] myArr = new int[max];
         for (int i = 0; i < max; i++) {
@@ -332,30 +339,54 @@ public class LogicalOperation {
         }
     }
 
-//    public void printArray(String[] array) {
-//        for (int i = 0; i < array.length; i++) {
-//            System.out.println(array[i]);
+    public void printArray(String[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+//
+//
+//    public float getAverageValueFromArray(int[] array3) {
+//        float sum = 0;
+//        for (int i = 0; i < array3.length; i++) {
+//            sum = sum + array3[i];
 //        }
+//        return (sum / array3.length);
 //    }
 //
+//
+//    public boolean isValueInArray(int[] array, int value) {
+//        for (int i = 0; i < array.length; i++) {
+//            if (array[i] == value) {
+//            }
+//            return true;
+//        }
+//        return false;
+//    }
 
-    public float getAverageValueFromArray(int[] array3) {
-        float sum = 0;
-        for (int i = 0; i < array3.length; i++) {
-            sum = sum + array3[i];
-        }
-        return (sum / array3.length);
-    }
 
+    public void numerepareArray (int minim[], int maxim){
+        int intArray[] = new int [100];
+        int even_count = 0;
+        for (int i = minim; i <= maxim; i++) {
+            if (minim % 2 == 1) {
 
-    public boolean isValueInArray(int[] array, int value) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == value) {
+            } else {
+                return 0;
             }
-            return true;
-        }
-        return false;
+        } System.out.println("");
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

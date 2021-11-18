@@ -4,51 +4,52 @@ public class AppMain {
 
     public static void main(String[] args) {
         Dog rex = new Dog();
-        rex.name = "Rex";
-        rex.breed = "Labrador";
-        rex.age = 1;
-        System.out.println(rex.name);
-        System.out.println(rex.age);
+        rex.setName("Rex");
+        rex.setBreed("Labrador");
+        rex.setAge (1);
+        System.out.println(rex.getName());
+        System.out.println(rex.getAge());
 
-        rex.name = "Blackie";
-        System.out.println(rex.name);
+        rex.setName ("Blackie");
+        System.out.println(rex.getName());
 
         Dog freddie = new Dog();
-        freddie.name = "Freddie";
-        System.out.println(freddie.name);
+        freddie.setName ("Freddie");
+        System.out.println(freddie.getName());
+
 
 
         PersonWhoAdopts person = new PersonWhoAdopts();
-        person.name = "John";
-        person.budget = 500;
-        System.out.println(person.name);
-        person.name = "Steve";
-        System.out.println(person.name);
+        person.setName("John");
+        person.setBudget (500);
+        System.out.println(person.getName());
+        person.setName("Steve");
+        System.out.println(person.getName());
 
 
         DogFood foooood = new DogFood();
-        foooood.name1 = "Purina";
-        foooood.price1 = 40.5;
-        foooood.quantity1 = 10000;
-        foooood.availability1 = 9000;
-        System.out.println(foooood.price1);
-        foooood.price1 = 80;
-        System.out.println(foooood.price1);
+        foooood.setName1 ("Purina");
+        foooood.setPrice1(40.5);
+        foooood.setAvailability1(10000);
+        foooood.setQuantity1(9000);
+        System.out.println(foooood.getPrice1());
+        foooood.setPrice1(80);
+        System.out.println(foooood.getPrice1());
 
 
 
         Activities act = new Activities();
-        act.name2 = "Sleeeeep";
-        System.out.println(act.name2);
-        act.name2 = "Just smileying";
-        System.out.println(act.name2);
+        act.setName2("Sleeeeep");
+        System.out.println(act.getName2());
+        act.setName2 ("Just smileying");
+        System.out.println(act.getName2());
 
 
         Veterinary vet = new Veterinary();
-        vet.name3 = "Dr OZ";
-        System.out.println(vet.name3);
-        vet.name3 = "Mr Jojo";
-        System.out.println(vet.name3);
+        vet.setName3 ("Dr OZ");
+        System.out.println(vet.getName3());
+        vet.setName3 ("Mr Jojo");
+        System.out.println(vet.getName3());
 
     }
 
