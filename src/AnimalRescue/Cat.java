@@ -1,6 +1,11 @@
 package AnimalRescue;
 
-public class Cat {
+public class Cat extends Animal{
+
+    public void purr(){
+
+
+    }
 
 
 
