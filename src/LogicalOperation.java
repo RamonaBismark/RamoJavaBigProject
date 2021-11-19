@@ -1,7 +1,3 @@
-import com.sun.source.tree.BreakTree;
-
-import javax.swing.*;
-
 public class LogicalOperation {
 
 
@@ -108,24 +104,19 @@ public class LogicalOperation {
     }
 
 
-        public void checkBigNumber  (int maxim, int maxx) {
-            if (maxim < maxx) {
-                for (int xx = maxim; xx <= maxx; xx++) {
-                    System.out.println(xx);
-                }
-            } else if (maxx > maxim) {
-                for (int xx = maxx; xx <= maxim; xx++) {
-                    System.out.println(xx);
-                }
-            } else{
-                        System.out.println("Numbers are equal");
-                    }
-                }
-
-
-
-
-
+    public void checkBigNumber(int maxim, int maxx) {
+        if (maxim < maxx) {
+            for (int xx = maxim; xx <= maxx; xx++) {
+                System.out.println(xx);
+            }
+        } else if (maxx > maxim) {
+            for (int xx = maxx; xx <= maxim; xx++) {
+                System.out.println(xx);
+            }
+        } else {
+            System.out.println("Numbers are equal");
+        }
+    }
 
 
     public void showNumerePare(int mic, int mare) {
@@ -174,7 +165,6 @@ public class LogicalOperation {
     }
 
 
-
     public void countAscendingSecond(int xxy) {
 
         while (xxy <= 100) {
@@ -201,23 +191,18 @@ public class LogicalOperation {
     }
 
 
-
-    public void countBetweenWhile( int firstNumber, int secondNumber){
-        if (firstNumber < secondNumber){
+    public void countBetweenWhile(int firstNumber, int secondNumber) {
+        if (firstNumber < secondNumber) {
             while (firstNumber <= secondNumber) {
                 System.out.println(firstNumber);
                 firstNumber++;
             }
-        }
-
-        else if (secondNumber < firstNumber){
+        } else if (secondNumber < firstNumber) {
             while (secondNumber <= firstNumber) {
                 System.out.println(firstNumber);
                 firstNumber++;
             }
-        }
-
-        else {
+        } else {
             System.out.println("The numbers are equal");
         }
     }
@@ -249,10 +234,10 @@ public class LogicalOperation {
         double sum = 0;
         int count = 0;
         while (staaart <= maaaaxim) {
-                sum += staaart;
-                staaart++;
-                count++;
-            }
+            sum += staaart;
+            staaart++;
+            count++;
+        }
         System.out.println(sum);
         double medie = sum / count;
         System.out.println("The average of the numbers is:" + medie);
@@ -269,7 +254,7 @@ public class LogicalOperation {
             }
             startstart++;
         }
-        float mediaaa = sum/count;
+        float mediaaa = sum / count;
         return mediaaa;
     }
 
@@ -296,32 +281,25 @@ public class LogicalOperation {
 
         while (iii <= 110) {
 
-            if (iii % 3 == 0 && iii % 5 == 0 && iii % 7 ==0) {
+            if (iii % 3 == 0 && iii % 5 == 0 && iii % 7 == 0) {
                 System.out.print("CozaLozaWoza");
-            }
-            else if (iii % 3 == 0 && iii % 5 ==0) {
+            } else if (iii % 3 == 0 && iii % 5 == 0) {
                 System.out.print("CozaLoza");
-            }
-            else if (iii % 7 == 0) {
+            } else if (iii % 7 == 0) {
                 System.out.print("Woza");
-            }
-            else if (iii %5 ==0){
+            } else if (iii % 5 == 0) {
                 System.out.println("Loza");
-            }
-            else if (iii % 3 ==0){
+            } else if (iii % 3 == 0) {
                 System.out.println("Coza");
             } else {
                 System.out.println(iii + "");
             }
-            if (iii % 11 ==0){
+            if (iii % 11 == 0) {
                 System.out.println();
             }
             iii++;
         }
     }
-
-
-
 
 
     public int[] populateArray(int max) {
@@ -344,53 +322,88 @@ public class LogicalOperation {
             System.out.println(array[i]);
         }
     }
-//
-//
-//    public float getAverageValueFromArray(int[] array3) {
-//        float sum = 0;
-//        for (int i = 0; i < array3.length; i++) {
-//            sum = sum + array3[i];
-//        }
-//        return (sum / array3.length);
-//    }
-//
-//
-//    public boolean isValueInArray(int[] array, int value) {
-//        for (int i = 0; i < array.length; i++) {
-//            if (array[i] == value) {
-//            }
-//            return true;
-//        }
-//        return false;
-//    }
 
 
-    public void numerepareArray (int minim[], int maxim){
-        int intArray[] = new int [100];
-        int even_count = 0;
-        for (int i = minim; i <= maxim; i++) {
-            if (minim % 2 == 1) {
-
-            } else {
-                return 0;
-            }
-        } System.out.println("");
+    public void numerepareArray(int[] array) {
+        for (int i = array.length; i <= 0; i++) {
+            if (array[i] % 2 == 0)
+                System.out.println(array[i]);
+        }
     }
 
 
+            public float getAverageValueFromArray ( int[] array3){
+                float sum = 0;
+                for (int i = 0; i < array3.length; i++) {
+                    sum = sum + array3[i];
+                }
+                return (sum / array3.length);
+            }
 
 
 
+    public boolean isValueInArray(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+            }
+            return true;
+        }
+        return false;
+    }
+
+
+//
+//    public boolean searchValueInArray (String[] array, String value) {
+//        String valueToSearch = "C";
+//        boolean ifExists = false;
+//        for (int i = 0; i < array.length; i++){
+//            String arrayValue = array [i];
+//            if (valueToSearch.equals(arrayValue)) {
+//                ifExists = true;
+//                break;
+//            }
+//        }
+//        if (ifExists) {
+//            System.out.println("True");
+//        } else {
+//            System.out.println("False");
+//        }
+//    }
+
+
+        public int[] showNumber (int [] arrayyy, int nrNou) {
+            int[] sir = new int[arrayyy.length];
+            for (int i = 0; i <= arrayyy.length - 1; i++) {
+                if (arrayyy[i] == nrNou) {
+                    System.out.println("Numarul a fost gasit pe pozitia:" + i);
+                } else {
+                    System.out.println("Numarul nu a fost gasit");
+                }
+            }
+                return sir;
+
+        }
 
 
 
+            public int getSecondSmallest ( int[] a, int total){
+                int temp;
+                for (int i = 0; i < total; i++) {
+                    for (int j = i + 1; j < total; j++) {
+                        if (a[i] > a[j]) {
+                            temp = a[i];
+                            a[i] = a[j];
+                            a[j] = temp;
+                        }
+                    }
+                }
+                return a[1];
 
 
+            }
 
 
-
-}
-
+        }
 
 
 
