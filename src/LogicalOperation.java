@@ -1,4 +1,9 @@
+import com.sun.source.tree.BreakTree;
+
+import java.util.ArrayList;
+
 public class LogicalOperation {
+
 
 
     public int checkBiggerNumber(int first, int second) {
@@ -325,64 +330,70 @@ public class LogicalOperation {
 
 
     public void numerepareArray(int[] array) {
-        for (int i = array.length; i <= 0; i++) {
+        for (int i = 0; i <= array.length; i++) {
             if (array[i] % 2 == 0)
                 System.out.println(array[i]);
         }
     }
 
 
-            public float getAverageValueFromArray ( int[] array3){
-                float sum = 0;
-                for (int i = 0; i < array3.length; i++) {
-                    sum = sum + array3[i];
-                }
-                return (sum / array3.length);
-            }
-
-
-
-    public boolean isValueInArray(int[] array, int value) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == value) {
-            }
-            return true;
+    public float getAverageValueFromArray ( int[] array3){
+        float sum = 0;
+        for (int i = 0; i < array3.length; i++) {
+            sum = sum + array3[i];
         }
-        return false;
+        return (sum / array3.length);
     }
 
 
-//
-//    public boolean searchValueInArray (String[] array, String value) {
-//        String valueToSearch = "C";
-//        boolean ifExists = false;
-//        for (int i = 0; i < array.length; i++){
-//            String arrayValue = array [i];
-//            if (valueToSearch.equals(arrayValue)) {
-//                ifExists = true;
-//                break;
+
+//    public boolean isValueInArray(int[] array, int value) {
+//        for (int i = 0; i < array.length; i++) {
+//            if (array[i] == value) {
 //            }
+//            return true;
 //        }
-//        if (ifExists) {
-//            System.out.println("True");
-//        } else {
-//            System.out.println("False");
-//        }
+//        return false;
 //    }
 
 
-        public int[] showNumber (int [] arrayyy, int nrNou) {
-            int[] sir = new int[arrayyy.length];
-            for (int i = 0; i <= arrayyy.length - 1; i++) {
+
+    public boolean searchValueInArray (String[] array, String value) {
+      for (int i= 0; i < array.length; i++){
+          if (array[i] == value) {
+              return true;
+          }
+      } return false;
+
+    }
+
+
+        public String showNumber (int [] arrayyy, int nrNou) {
+            for (int i = 0; i < arrayyy.length; i++) {
                 if (arrayyy[i] == nrNou) {
-                    System.out.println("Numarul a fost gasit pe pozitia:" + i);
-                } else {
-                    System.out.println("Numarul nu a fost gasit");
+                    String strI = String.valueOf(i);
+                    return strI;
+                }
+
+            }
+            return "No number found";
+        }
+
+
+
+        public ArrayList<Integer> getWithoutNumber (ArrayList<Integer> numere, int targetValue) {
+           ArrayList<Integer> sir = numere;
+            for (int i = 0; i < sir.size(); i++) {
+                if (sir.get(i) == targetValue) {
+                    sir.remove(i);
                 }
             }
-                return sir;
-
+            return sir;
         }
+
+
+
+
 
 
 
@@ -398,8 +409,13 @@ public class LogicalOperation {
                     }
                 }
                 return a[1];
+            }
 
 
+            public ArrayList<Integer> valoareaValoarea (ArrayList<Integer> sirCuValoriNoi, ArrayList<Integer> sirFaraValori){
+            for (int i = 0; i < sirCuValoriNoi.size(); i++){
+                sirFaraValori.add(sirCuValoriNoi.get(i));
+            } return sirCuValoriNoi;
             }
 
 
