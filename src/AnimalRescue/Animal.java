@@ -83,7 +83,9 @@ public class Animal {
         System.out.println("Playing fetch...");
     }
 
-
+    public void speak (){
+        System.out.println("Ham");
+    }
 
 
 

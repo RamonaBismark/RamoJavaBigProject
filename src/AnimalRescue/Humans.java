@@ -13,5 +13,12 @@ public class Humans {
 
 
 
+    public void character (){
+        System.out.println("Not all humans are good people");
+    }
+
 
 }
+
+
+

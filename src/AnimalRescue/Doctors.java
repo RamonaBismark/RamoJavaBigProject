@@ -12,4 +12,9 @@ public class Doctors extends Humans{
     public void setName3 (String name3) {
         this.name3 = name3;
     }
+
+    public void character (){
+        System.out.println("Doctors are good people");
+    }
+
 }

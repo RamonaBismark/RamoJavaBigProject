@@ -13,4 +13,9 @@ public class Veterinary extends Doctors{
     }
 
 
+    public void character (){
+        System.out.println("Vets are good people");
+    }
+
+
 }

@@ -4,9 +4,7 @@ package AnimalRescue;
 
         public void wavingTail () {
             System.out.println("Da din coada");
-
         }
-
 
 
 

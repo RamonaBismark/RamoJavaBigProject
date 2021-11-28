@@ -33,5 +33,14 @@ public class Food {
     }
     public void setAvailability1 (double availability1){
         this.availability1 = availability1;
+
     }
+
+
+    public void healthy() {
+        System.out.println("Amazing for the health");
+    }
+
 }
+
+
