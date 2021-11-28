@@ -66,6 +66,26 @@ public class Lab5 {
         op.getWithoutNumber(alteNumere, 5);
         System.out.println("Dupa remove" + alteNumere);
 
+ //     //    Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar.
+        // //    Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul primit, fara acel numar.
+        ////   REZOLVARE FARA ARRAYLIST
+
+
+//        int [] myArray = op.populateArray(10);
+//        int myInt = 5;
+//        int[] resultArray = op.getArrayWithoutNumber(myArray,myInt);
+//        op.printArray(resultArray);
+//
+
+
+
+
+
+
+
+
+
+
 
  //   Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
 

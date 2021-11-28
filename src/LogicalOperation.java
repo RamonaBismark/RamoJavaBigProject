@@ -1,9 +1,9 @@
 import com.sun.source.tree.BreakTree;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class LogicalOperation {
-
 
 
     public int checkBiggerNumber(int first, int second) {
@@ -337,7 +337,7 @@ public class LogicalOperation {
     }
 
 
-    public float getAverageValueFromArray ( int[] array3){
+    public float getAverageValueFromArray(int[] array3) {
         float sum = 0;
         for (int i = 0; i < array3.length; i++) {
             sum = sum + array3[i];
@@ -346,80 +346,178 @@ public class LogicalOperation {
     }
 
 
-
-//    public boolean isValueInArray(int[] array, int value) {
-//        for (int i = 0; i < array.length; i++) {
-//            if (array[i] == value) {
-//            }
-//            return true;
-//        }
-//        return false;
-//    }
-
+    public boolean isValueInArray(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+            }
+            return true;
+        }
+        return false;
+    }
 
 
-    public boolean searchValueInArray (String[] array, String value) {
-      for (int i= 0; i < array.length; i++){
-          if (array[i] == value) {
-              return true;
-          }
-      } return false;
+    public boolean searchValueInArray(String[] array, String value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                return true;
+            }
+        }
+        return false;
 
     }
 
 
-        public String showNumber (int [] arrayyy, int nrNou) {
-            for (int i = 0; i < arrayyy.length; i++) {
-                if (arrayyy[i] == nrNou) {
-                    String strI = String.valueOf(i);
-                    return strI;
-                }
-
+    public String showNumber(int[] arrayyy, int nrNou) {
+        for (int i = 0; i < arrayyy.length; i++) {
+            if (arrayyy[i] == nrNou) {
+                String strI = String.valueOf(i);
+                return strI;
             }
-            return "No number found";
-        }
-
-
-
-        public ArrayList<Integer> getWithoutNumber (ArrayList<Integer> numere, int targetValue) {
-           ArrayList<Integer> sir = numere;
-            for (int i = 0; i < sir.size(); i++) {
-                if (sir.get(i) == targetValue) {
-                    sir.remove(i);
-                }
-            }
-            return sir;
-        }
-
-
-
-
-
-
-
-            public int getSecondSmallest ( int[] a, int total){
-                int temp;
-                for (int i = 0; i < total; i++) {
-                    for (int j = i + 1; j < total; j++) {
-                        if (a[i] > a[j]) {
-                            temp = a[i];
-                            a[i] = a[j];
-                            a[j] = temp;
-                        }
-                    }
-                }
-                return a[1];
-            }
-
-
-            public ArrayList<Integer> valoareaValoarea (ArrayList<Integer> sirCuValoriNoi, ArrayList<Integer> sirFaraValori){
-            for (int i = 0; i < sirCuValoriNoi.size(); i++){
-                sirFaraValori.add(sirCuValoriNoi.get(i));
-            } return sirCuValoriNoi;
-            }
-
 
         }
+        return "No number found";
+    }
+
+
+    public ArrayList<Integer> getWithoutNumber(ArrayList<Integer> numere, int targetValue) {
+        ArrayList<Integer> sir = numere;
+        for (int i = 0; i < sir.size(); i++) {
+            if (sir.get(i) == targetValue) {
+                sir.remove(i);
+            }
+        }
+        return sir;
+    }
+
+
+//
+//        public int[] getArrayWithoutNumber (int [] array, int number) {
+//            if (isValueInArray(array, number)) {
+//                int[] secondArray = new int[array.length - 1];
+//                int jjj = 0;
+//                for (int i = 0, jjj = 0; i < array.length; i++) {
+//                    if (array[i] != number) {
+//                        secondArray[jjj] = array[i];
+//                        jjj++;
+//                    }
+//                }
+//                return secondArray;
+//            }
+//            return array;
+//        }
+
+
+    public int getSecondSmallest(int[] a, int total) {
+        int temp;
+        for (int i = 0; i < total; i++) {
+            for (int j = i + 1; j < total; j++) {
+                if (a[i] > a[j]) {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+        return a[1];
+    }
+
+
+    public ArrayList<Integer> valoareaValoarea(ArrayList<Integer> sirCuValoriNoi, ArrayList<Integer> sirFaraValori) {
+        for (int i = 0; i < sirCuValoriNoi.size(); i++) {
+            sirFaraValori.add(sirCuValoriNoi.get(i));
+        }
+        return sirCuValoriNoi;
+    }
+
+
+    public List<Integer> getPopulatedList(int max) {
+        List<Integer> myList = new ArrayList<>();
+        for (int i = 1; i < max; i++) {
+            myList.add(i);
+        }
+        return myList;
+    }
+
+
+    //     Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate valorile din lista, fiecare pe rand nou.
+
+    public void printTheList(List<Integer> theList) {
+        for (int i = 0; i < theList.size(); i++) {
+            System.out.println(theList.get(i));
+        }
+    }
+
+
+    //     Scrieti o metoda Java, care sa primeasca doi parametri: un parametru sa fie o lista de numere, si celalalt un numar (real sau intreg). Metoda sa adauge numarul primit ca si parametru la final de lista.
+
+
+    public List<Integer> numarPrimitLaFinal(List<Integer> listuta, int numar) {
+        listuta.add(numar);
+        return listuta;
+    }
+
+
+    //     Scrieti o metoda Java, care sa primeasca doi parametri: un parametru de tip Lista, iar celalalt un numar intreg.
+    //     Sa se parcurga lista si sa afiseze, pe rand, toate valorile din lista, fiecare pe rand nou, pornind de la numarul intreg primit ca si parametru.
+
+    public void printListFromNumber(List<Integer> myList, int number) {
+        for (int i = number; i <= myList.size(); i++) {
+            System.out.println(i);
+        }
+    }
+
+
+//    Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate valorile din lista, dar invers(de la capat la inceput).
+
+
+    public void printListFromBiggerNumber(List<Integer> myyyList) {
+        for (int i = myyyList.size() - 1; i >= 0; i--) {
+            System.out.println(myyyList.get(i));
+        }
+    }
+
+
+// Scrieti o metoda Java, care sa primeasca trei parametri: unul de tip Lista de String-uri, unul de tip intreg, si unul de tip String.
+// Metoda sa adauge parametrul de tip String in lista primita, iar parametrul de tip intreg reprezinta pozitia la care sa fie pus acel String.
+
+    public List<String> printMyStringList(List<String> listaMeaDeString, int index, String nume) {
+        listaMeaDeString.add(index, nume);
+        return listaMeaDeString;
+    }
+
+
+//  Scrieti o metoda Java, care sa primeasca doi parametri. Primul dintre ei va fi o Lista, iar metoda sa ia al doilea parametru si sa il adauge pe prima pozitie din lista.
+
+    public List<String> doiParametri(List<String> listaLista, String nume) {
+        listaLista.add(0, nume);
+        return listaLista;
+    }
+
+
+// Scrieti o metoda Java care sa primeasca parametru o Lista, si sa afiseze ce valori are lista, si ce pe ce pozitie. (Ex: “Pe pozitia 1 valoare este 4”).
+
+    public void valoriSiPozitii(List<Integer> listaaa) {
+        for (int i = 0; i < listaaa.size(); i++) {
+            System.out.println(" Pe pozitia " + i + " valoarea este de " + listaaa.get(i));
+        }
+    }
+
+//  Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
+
+    public int celMaiMareNumar(List<Integer> numbers) {
+        int max = 0;
+        for (int i = 0; i < numbers.size(); i++) {
+            max = numbers.get(i);
+        }
+        return max;
+    }
+
+}
+
+
+
+
+
 
 
 
