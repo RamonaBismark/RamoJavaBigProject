@@ -13,9 +13,13 @@ public class Persian extends Cat{
     }
 
 
-
     public void play(){
         System.out.println("Playing with the tale");
     }
+
+
+    public void bark(){
+        System.out.println("Cats doesn't bark");
+    };
 
     }

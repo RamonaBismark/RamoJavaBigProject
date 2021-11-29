@@ -72,9 +72,7 @@ public abstract class Animal {
 
     public abstract void sleep ();
 
-    public void bark(){
-        System.out.println("Whof");
-    }
+    public abstract void bark();
 
     public abstract void play();
 
