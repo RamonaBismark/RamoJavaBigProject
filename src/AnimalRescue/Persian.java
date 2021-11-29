@@ -4,6 +4,18 @@ public class Persian extends Cat{
 
 
     public void sleep (){
-        System.out.println("Persian cats doesn't sleep all the time");
+        System.out.println("Chhh");
     }
-}
+
+
+    public void speak (){
+        System.out.println("Maaau");
+    }
+
+
+
+    public void play(){
+        System.out.println("Playing with the tale");
+    }
+
+    }

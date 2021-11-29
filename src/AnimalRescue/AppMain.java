@@ -3,7 +3,7 @@ package AnimalRescue;
 public class AppMain {
 
     public static void main(String[] args) {
-        Dog rex = new Dog();
+        Labrador rex = new Labrador();
         rex.setName("Rex");
         rex.setBreed("Labrador");
         rex.setAge (1);
@@ -13,7 +13,7 @@ public class AppMain {
         rex.setName ("Blackie");
         System.out.println(rex.getName());
 
-        Dog freddie = new Dog();
+        Dog freddie = new Labrador();
         freddie.setName ("Freddie");
         System.out.println(freddie.getName());
 
