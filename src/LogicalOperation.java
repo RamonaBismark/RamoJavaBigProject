@@ -460,8 +460,8 @@ public class LogicalOperation {
     //     Scrieti o metoda Java, care sa primeasca doi parametri: un parametru de tip Lista, iar celalalt un numar intreg.
     //     Sa se parcurga lista si sa afiseze, pe rand, toate valorile din lista, fiecare pe rand nou, pornind de la numarul intreg primit ca si parametru.
 
-    public void printListFromNumber(List<Integer> myList, int number) {
-        for (int i = number; i <= myList.size(); i++) {
+    public void printListFromNumber(List<Integer> myList, int position) {
+        for (int i = position; i <= myList.size(); i++) {
             System.out.println(i);
         }
     }
@@ -511,6 +511,23 @@ public class LogicalOperation {
         }
         return max;
     }
+
+
+
+    //
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
